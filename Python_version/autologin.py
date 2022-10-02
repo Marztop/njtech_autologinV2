@@ -40,11 +40,24 @@ def get_captcha():
         result=captcha.classification(imgbyte)
     return result
     
-
+'''
 username ='username'                    #your username
 password ='password'                    #your password
 channelshow ='中国移动'                  #'中国移动' or '中国电信'
 channel ='@cmcc'                        #'@cmcc'   or  '@telecom'
+'''
+
+with open(self_path+'\\config.ini','r',encoding='utf-8') as config:
+    for line in config.readlines().strip('\n'):
+        if 'username' in line:
+            username = eval(line.strip('==>')[1])
+        elif 'password' in line:
+            password = eval(line.strip('==>')[1])
+        elif 'channelshow' in line:
+            channelshow = eval(line.strip('==>')[1])
+        elif 'channel' in line:
+            channel = eval(line.strip('==>')[1])
+
 
 lt,execution,post_url=get_args()
 captcha=get_captcha()
@@ -62,3 +75,4 @@ params = {
 }
 
 login_response = session.post(url=r'https://u.njtech.edu.cn/cas/login?service=https%3A%2F%2Fu.njtech.edu.cn%2Foauth2%2Fauthorize%3Fclient_id%3DOe7wtp9CAMW0FVygUasZ%26response_type%3Dcode%26state%3Dnjtech%26s%3Df682b396da8eb53db80bb072f5745232', params=params, headers=headers)
+
