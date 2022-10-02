@@ -2,6 +2,7 @@ import requests
 import re
 import os
 import ddddocr
+import autologin_config
 
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36",
@@ -40,34 +41,16 @@ def get_captcha():
         result=captcha.classification(imgbyte)
     return result
     
-'''
-username ='username'                    #your username
-password ='password'                    #your password
-channelshow ='中国移动'                  #'中国移动' or '中国电信'
-channel ='@cmcc'                        #'@cmcc'   or  '@telecom'
-'''
-
-with open(self_path+'\\config.ini','r',encoding='utf-8') as config:
-    for line in config.readlines().strip('\n'):
-        if 'username' in line:
-            username = eval(line.strip('==>')[1])
-        elif 'password' in line:
-            password = eval(line.strip('==>')[1])
-        elif 'channelshow' in line:
-            channelshow = eval(line.strip('==>')[1])
-        elif 'channel' in line:
-            channel = eval(line.strip('==>')[1])
-
 
 lt,execution,post_url=get_args()
 captcha=get_captcha()
 
 params = {
-    'username': username,
-    'password': password,
+    'username': autologin_config.username,
+    'password': autologin_config.password,
     'captcha': captcha,
-    'channelshow': channelshow,
-    'channel': channel,
+    'channelshow': autologin_config.channelshow,
+    'channel': autologin_config.channel,
     'lt': lt,
     'execution': execution,
     '_eventId': 'submit',
