@@ -1,0 +1,287 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+    <title>南京工业大学 统一身份认证</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+    <script type="text/javascript" src="/cas/js/jquery-1.9.1.min.js;jsessionid=40E10CAC4B23FE4179C62D3A2C51F07F.TomcatB"></script>
+    <link rel="icon" href="/cas/themes/ntu/favicon.ico;jsessionid=40E10CAC4B23FE4179C62D3A2C51F07F.TomcatB" type="image/x-icon"/>
+
+    <link href="/cas/themes/njtech20220928/css/style.css;jsessionid=40E10CAC4B23FE4179C62D3A2C51F07F.TomcatB?20181227" rel="stylesheet" type="text/css" media="screen"/>
+    <script type="text/javascript" src="/cas/themes/njtech20220928/js/script.js;jsessionid=40E10CAC4B23FE4179C62D3A2C51F07F.TomcatB"></script>
+</head>
+
+<body>
+    <div id="banner"></div>
+
+    <div id="main" class="login web-wrap" style="background: none !important;">
+        <div class="topbar">
+            <div class="layoutcenter topbar-main">
+                <div class="tm-item logo"></div>
+                <div class="tm-item title">智慧南工</div>
+            </div>
+        </div>
+        <div class="main-body">
+
+            <form id="fm1" class="clearfix" action="/cas/login;jsessionid=40E10CAC4B23FE4179C62D3A2C51F07F.TomcatB?service=https%3A%2F%2Fu.njtech.edu.cn%2Foauth2%2Fauthorize%3Fclient_id%3DOe7wtp9CAMW0FVygUasZ%26response_type%3Dcode%26state%3Dnjtech%26s%3Df682b396da8eb53db80bb072f5745232" method="post">
+                <div class="layoutcenter clearfix">
+                    
+                        <div class="way account-login account-login-withchannel">
+                    
+                    
+                        <div class="login-form">
+                            <div class="lf-title">统一身份认证</div>
+                            <div class="lf-item lf-username">
+                                <i class="icon icon-account"></i>
+                                <input id="username" name="username" class="required" tabindex="1" placeholder="请输入学号/工号" type="text" value="" autocomplete="false"/>
+                            </div>
+                            <div class="lf-item lf-password">
+                                <i class="icon icon-password"></i>
+                                <input id="password" name="password" class="required" tabindex="2" placeholder="请输入密码" type="password" value="" autocomplete="off"/>
+                                <div class="hintmes" style="display: none;">初始密码默认为您身份证后八位</div>
+                            </div>
+                            <div class="lf-item lf-captcha">
+                                <i class="icon icon-captcha"></i>
+                                <input id="imgcaptcha" name="captcha" class="required error" tabindex="1" placeholder="请输入图形验证码" type="text" value="" autocomplete="false"/>
+                                <img onclick="this.src='captcha.jpg?'+Math.random()" id="pc-captcha" class="captcha-img"/>
+                            </div>
+                            
+                                <div class="lf-item lf-channel">
+                                    <i class="icon icon-channel"></i> <input type="text" name="channelshow" id="channelshow" readonly="readonly" value="校园内网"/> <input type="hidden" name="channel" id="channel" readonly="readonly"
+                                        value="default"/>
+                                    <div class="channel-option">
+                                        <span class="optionitem choosed" value="default" valuechinese="校园内网">校园内网</span> <span class="optionitem" value="@cmcc" valuechinese="中国移动">中国移动</span> <span class="optionitem" value="@telecom"
+                                            valuechinese="中国电信">中国电信</span>
+                                    </div>
+                                </div>
+                            
+
+                        </div>
+                        <div class="login-help clearfix">
+                            <a href="/profile/user/reset/password">忘记密码</a>
+                        </div>
+                        <div class="helpful-message" style="color:red;">
+                            
+                        </div>
+                        <div class="login-submit">
+                            <input type="hidden" name="lt" value="LT-59804-GxkyV7n9pv1zUYIrMbgPLEEdbEuXPI"/>
+                            <input type="hidden" name="execution" value="e1s1"/>
+                            <input type="hidden" name="_eventId" value="submit"/> <input type="button"
+                                style="cursor: pointer;" tabindex="4" accesskey="l" name="login" id="login" value="登录"/>
+
+                        </div>
+                        <div class="other-links clearfix">
+                            <div class="intro">
+                                <span class="line"></span> <span>查看说明</span> <span class="line"></span>
+                            </div>
+                            <a href="/cas/themes/ntu/html/ptjj.html;jsessionid=40E10CAC4B23FE4179C62D3A2C51F07F.TomcatB">平台简介</a> <a href="/cas/themes/ntu/html/zhsm.html;jsessionid=40E10CAC4B23FE4179C62D3A2C51F07F.TomcatB">账号说明</a>
+                        </div>
+                        <div class="waychange">
+                            <div class="way-list clearfix">
+                                <i class="icon androw"></i> <i class="icon ios"></i> <span>手机客户端</span>
+                                <i class="icon icon-r"></i>
+                            </div>
+                        </div>
+                        
+                            <div class="get-intro">
+                                <div class="gi-inner">
+                                    <i class="intro-icon"></i>
+                                    <a href="/cas/themes/njtech/njtech_home/njtech_home.html;jsessionid=40E10CAC4B23FE4179C62D3A2C51F07F.TomcatB" target="_blank">"njtech-home"宿舍宽带使用说明</a>
+                                </div>
+                            </div>
+                        
+                    </div>
+
+                    <div class="way scan-way">
+                        <div class="scan-form">
+                            <div class="sf-title">
+                                <div class="laycenter clearfix">
+                                    <span class="sf-item-title sf-app active">手机APP</span> <span class="sf-item-title sf-wechat">微信企业号</span>
+                                </div>
+                            </div>
+                            <div class="sf-content">
+                                <div class="imgarea">
+                                    <img src="/cas/themes/njtech/img/app.png;jsessionid=40E10CAC4B23FE4179C62D3A2C51F07F.TomcatB"/>
+                                </div>
+                                <div class="sf-message">
+                                    支持IOS、Android系统</br>在手机或平板电脑上使用更加方便</br>随时随地了解校内动态
+                                </div>
+                            </div>
+                            <div class="sf-content">
+                                <div class="imgarea">
+                                    <img src="/cas/themes/njtech/img/wechat.png;jsessionid=40E10CAC4B23FE4179C62D3A2C51F07F.TomcatB"/>
+                                </div>
+                                <div class="sf-message">
+                                    请用微信扫码关注“i南工”微信企业号</br>随时随地了解校内动态
+                                </div>
+                            </div>
+                            <div class="wayback">
+                                <div class="back-to-account">
+                                    <img src="/cas/themes/njtech/img/close.png;jsessionid=40E10CAC4B23FE4179C62D3A2C51F07F.TomcatB"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </form>
+
+        </div>
+
+        <div class="footer">
+            <div class="subfooter">
+                <div class="layoutcenter clearfix" style="width: 1300px;">
+                    <div class="sf-item sf-l">用户在登录或注册过程中如有疑问，请联系信息中心。丁家桥：83172367；江浦校区：58139276（学生宿舍宽带报修），58139277（办公区网络报修）</div>
+                    <div class="sf-item sf-r">邮编：211800 地址：南京市江北新区浦珠南路30号</div>
+                </div>
+            </div>
+            <div class="copyright-footer">
+                <div class="layoutcenter">
+                    <div>Copyright © 南京工业大学 苏ICP备11073482号</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div id="banner1" style="display: none; background: none; height: 100%; width: 100%;">
+
+        <div class="mobile mobile-wrap">
+            <div class="topbar">
+                <div class="layoutcenter topbar-main">
+                    <a href="http://www.njtech.edu.cn/" target="_blank" title="南京工业大学主页">
+                        <div class="tm-item logo"></div>
+                    </a>
+                </div>
+            </div>
+
+            <form id="fm2" class="clearfix" style="width: 100%;" action="/cas/login;jsessionid=40E10CAC4B23FE4179C62D3A2C51F07F.TomcatB?service=https%3A%2F%2Fu.njtech.edu.cn%2Foauth2%2Fauthorize%3Fclient_id%3DOe7wtp9CAMW0FVygUasZ%26response_type%3Dcode%26state%3Dnjtech%26s%3Df682b396da8eb53db80bb072f5745232" method="post">
+                <div class="main-cont">
+                    
+                        <div class="way account-login account-login-withchannel">
+                    
+                    
+                        <div class="login-form login-mobile">
+                            <div class="lf-item lf-username">
+                                <i class="icon icon-account"></i>
+                                <input id="username-mobile" name="username" class="required" tabindex="1" placeholder="请输入学号/工号" type="text" value="" autocomplete="false"/>
+
+                            </div>
+                            <div class="lf-item lf-password">
+                                <i class="icon icon-password"></i>
+                                <input id="password-mobile" name="password" class="required" tabindex="2" placeholder="请输入密码" type="password" value="" autocomplete="off"/>
+
+                                <div class="hintmes" style="display: none;">初始密码默认为您身份证后八位</div>
+                            </div>
+                            <div class="lf-item lf-captcha">
+                                <i class="icon icon-captcha"></i>
+                                <input id="imgcaptcha" name="captcha" class="required error" tabindex="1" placeholder="请输入图形验证码" type="text" value="" autocomplete="false"/>
+                                <img  onclick="this.src='captcha.jpg?'+Math.random()" id="mobile-captcha" class="captcha-img"/>
+                            </div>
+
+                            
+                                <div class="lf-item lf-channel">
+                                    <i class="icon icon-channel"></i> <input type="text" name="channelshow" id="channelshow-mobile" readonly="readonly" value="校园内网"/> <input type="hidden" name="channel" id="channel-mobile"
+                                        readonly="readonly" value="default"/>
+                                    <div class="channel-option">
+                                        <span class="optionitem choosed" value="default" valuechinese="校园内网">校园内网</span> <span class="optionitem" value="@cmcc" valuechinese="中国移动">中国移动</span> <span class="optionitem" value="@telecom"
+                                            valuechinese="中国电信">中国电信</span>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                        <div class="login-help clearfix">
+                            <a href="/profile/user/reset/password">忘记密码</a>
+                        </div>
+                        <div class="helpful-message" style="color:red;">
+                            
+                        </div>
+                        <div class="login-submit">
+                            <input type="hidden" name="lt" value="LT-59804-GxkyV7n9pv1zUYIrMbgPLEEdbEuXPI"/> <input type="hidden" name="execution" value="e1s1"/> <input type="hidden" name="_eventId" value="submit"/> <input type="button"
+                                name="mobile-login" accesskey="l" id="login-mobile" value="登录"/>
+                        </div>
+                        <div class="other-links clearfix">
+                            <a href="/cas/themes/ntu/html/m_ptjj.html;jsessionid=40E10CAC4B23FE4179C62D3A2C51F07F.TomcatB">平台简介</a>
+                            <a href="/cas/themes/ntu/html/m_zhsm.html;jsessionid=40E10CAC4B23FE4179C62D3A2C51F07F.TomcatB">账号说明</a>
+                        </div>
+
+                        
+                            <div class="get-intro">
+                                <div class="gi-inner">
+                                    <i class="intro-icon"></i>
+                                    <a href="/cas/themes/njtech/njtech_home/njtech_home.html;jsessionid=40E10CAC4B23FE4179C62D3A2C51F07F.TomcatB" target="_blank">"njtech-home"宿舍宽带使用说明</a>
+                                </div>
+                            </div>
+                        
+
+
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    </div>
+    
+
+    <script>
+        var browser = {
+            versions: function() {
+                var u = navigator.userAgent,
+                    app = navigator.appVersion;
+                return { //移动终端浏览器版本信息
+                    trident: u.indexOf('Trident') > -1, //IE内核
+                    presto: u.indexOf('Presto') > -1, //opera内核
+                    webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                    gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                    mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                    ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                    android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或uc浏览器
+                    iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
+                    iPad: u.indexOf('iPad') > -1, //是否iPad
+                    webApp: u.indexOf('Safari') == -1
+                        //是否web应该程序，没有头部与底部
+                };
+            }(),
+            language: (navigator.browserLanguage || navigator.language)
+                .toLowerCase()
+        };
+
+        // 根据不同的终端，跳转到不同的地址 ;
+        if (browser.versions.mobile) {
+
+            $('#mobile-captcha').attr('src','captcha.jpg')
+            //var desW = 320;
+            //var scale = document.documentElement.clientWidth / desW;
+            //$("[name='viewport']").attr(
+            //"content",
+            //"width=device-width,initial-scale=" + scale
+            //+ ",user-scalable=no");
+
+            //document.getElementById("banner").style.display = 'none';
+            //document.getElementById("bottom").style.display = 'none';
+            document.getElementById("main").style.display = 'none';
+
+            document.body.background = '#eefbff url(images/bgline.jpg) repeat-x top';
+            document.getElementById("banner1").style.display = 'block';
+            $('#login1 #username-mobile').focus();
+        } else {
+            $('#pc-captcha').attr('src','captcha.jpg')
+            $('#login #username').focus();
+        }
+    </script>
+</body>
