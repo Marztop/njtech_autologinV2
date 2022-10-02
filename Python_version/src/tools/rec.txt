@@ -1,0 +1,1 @@
+datas=[('C:\\Users\\Marztop\\.conda\\envs\\autologin\\Lib\\site-packages\\onnxruntime-1.12.1-py3.9-win-amd64.egg\\onnxruntime\\capi\\onnxruntime_providers_shared.dll','onnxruntime\\capi'),('D:\\Users\\Marztop\\OneDrive\\vscode\\Python\\njtech_autologinV2\\Python_version\\ddddocr-master\\build\\lib\\ddddocr\\common.onnx','ddddocr')]
