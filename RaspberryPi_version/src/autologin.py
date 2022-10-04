@@ -40,9 +40,8 @@ def get_captcha():
         imgbyte=img.read()
         result=captcha.classification(imgbyte)
     return result
-    
 
-if __name__ == '__main__':
+def main():
     lt,execution,post_url=get_args()
     captcha=get_captcha()
     params = {
@@ -56,5 +55,8 @@ if __name__ == '__main__':
         '_eventId': 'submit',
         'login': '登录'
     }
-
     login_response = session.post(url=r'https://u.njtech.edu.cn/cas/login?service=https%3A%2F%2Fu.njtech.edu.cn%2Foauth2%2Fauthorize%3Fclient_id%3DOe7wtp9CAMW0FVygUasZ%26response_type%3Dcode%26state%3Dnjtech%26s%3Df682b396da8eb53db80bb072f5745232', params=params, headers=headers)
+    return 0
+
+if __name__ == '__main__':
+    main()
