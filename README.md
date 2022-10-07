@@ -1,5 +1,5 @@
 # njtech_autologinV2
-南工大智慧南工自动登录，支持验证码校验
+南京工业大学智慧南工自动登录，支持验证码校验
 
 目前只有python版本，后期会考虑添加shell/openwrt版本
 
