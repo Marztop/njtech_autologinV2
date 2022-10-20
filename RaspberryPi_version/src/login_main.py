@@ -94,8 +94,6 @@ if __name__ == '__main__':
 
     send_command('cd /sbin/;./ifup wan')
     send_command('cd /sbin/;./ifup wan2')
-    send_command('cd /usr/sbin;./mwan3 stop')
-    send_command('cd /usr/sbin;./mwan3 start')
     send_command('cd /usr/sbin;./mwan3 restart')
 
 ssh_client.close()
