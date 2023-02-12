@@ -1,8 +1,8 @@
 import requests
 import re
 import os
-import ddddocr
 import autologin_config
+from return_captcha import captGet
 
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36",
@@ -35,10 +35,7 @@ def get_captcha():
     res = session.get('https://u.njtech.edu.cn/cas/captcha.jpg',headers=headers)
     with open(self_path+'\\captcha.jpg','wb') as img:
         img.write(res.content)
-    captcha = ddddocr.DdddOcr()
-    with open(self_path+'\\captcha.jpg','rb') as img:
-        imgbyte=img.read()
-        result=captcha.classification(imgbyte)
+    result=captGet(pic_path=self_path+'\\captcha.jpg')
     return result
     
 
